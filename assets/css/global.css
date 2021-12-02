@@ -1598,6 +1598,7 @@ header .navbar-nav .nav-item {
     right: 0;
     left: 0;
     z-index: 9999;
+    box-shadow: 0px 0px 5px 0px rgba(253,27,91, 0.5);
   }
   .home{
     background-position: unset;
