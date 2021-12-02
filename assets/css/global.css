@@ -1303,6 +1303,7 @@ header .navbar-nav .dropdown .dropdown-menu li .dropdown-item:hover::before{
   text-align: left;
   align-items: flex-end;
   padding-right: 0;
+  text-transform: none;
 }
 .footer .address .footer-title{
   padding-right: 146px;
