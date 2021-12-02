@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -680,12 +680,12 @@
             <h3>useful links</h3>
           </div>
           <ul>
-            <li><a href="#0">Home</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">causes</a></li>
-            <li><a href="">blogs</a></li>
-            <li><a href="">testimonials</a></li>
-            <li><a href="">contact us</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#causes">causes</a></li>
+            <li><a href="#blogs">blogs</a></li>
+            <li><a href="#testimonials">testimonials</a></li>
+            <li><a href="#contact">contact us</a></li>
           </ul>
         </div>
       </div>
@@ -805,24 +805,18 @@
         this.tick();
         this.isDeleting = false;
       };
-      
       TxtRotate.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-      
         if (this.isDeleting) {
           this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
           this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-      
         var that = this;
         var delta = 300 - Math.random() * 100;
-      
         if (this.isDeleting) { delta /= 2; }
-      
         if (!this.isDeleting && this.txt === fullTxt) {
           delta = this.period;
           this.isDeleting = true;
@@ -831,12 +825,10 @@
           this.loopNum++;
           delta = 500;
         }
-      
         setTimeout(function() {
           that.tick();
         }, delta);
       };
-      
       window.onload = function() {
         var elements = document.getElementsByClassName('txt-rotate');
         for (var i=0; i<elements.length; i++) {
