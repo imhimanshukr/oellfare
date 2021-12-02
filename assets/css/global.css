@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+z
 * {
   margin: 0;
   padding: 0;
@@ -389,7 +389,7 @@ header .navbar-nav .dropdown .dropdown-menu li .dropdown-item:hover::before{
   justify-content: right;
 }
 .progress-section .progress-content .progress_bar .progress-limit span b{
-  font-size: 18px;
+  font-size: 16px;
 }
 .progress-section .progress-content .progress_bar .progress-limit span{
   font-size: 14px;
@@ -1056,10 +1056,17 @@ header .navbar-nav .dropdown .dropdown-menu li .dropdown-item:hover::before{
 
 /* Blogs */
 .blog{
-  padding: 80px 0;
+  padding: 50px 0 80px;
 }
 .blog [class*=col-]{
   display: flex;
+}
+.blog .heading h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 20px;
 }
 .blog .box{
   background-color: var(--white);
@@ -1556,7 +1563,7 @@ header .navbar-nav .nav-item {
     justify-content: center;
   }
   .blog {
-    padding: 60px 0 30px;
+    padding: 40px 0 30px;
   }
   .blog [class*="col-"]{
     width: 360px;
@@ -1628,6 +1635,9 @@ header .navbar-nav .nav-item {
   }
   .causes .heading h2, .volunteer .volunteer-offer .v-content h2{
     font-size: 30px;
+  }
+  .blog .heading h2{
+    font-size: 25px;
   }
   .volunteer-counter {
     margin-top: 5px;
