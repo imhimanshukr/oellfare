@@ -1593,6 +1593,12 @@ header .navbar-nav .nav-item {
   }
 }
 @media screen and (max-width:575px){
+  header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
   .home{
     background-position: unset;
   }
