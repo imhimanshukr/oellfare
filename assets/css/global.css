@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-z
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,7 @@ z
   list-style: none;
   text-decoration: none;
 }
+
 
 p,
 .p {
@@ -34,6 +34,9 @@ body {
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
+::marker{
+  display: none !important;
+}
 [class*=col-]{
   padding: 0 15px;
 }
@@ -53,6 +56,9 @@ h1,h2,h3,h4,h5,h6{
 }
  .owl-theme .owl-nav.disabled + .owl-dots{
   margin-top: 40px !important;
+}
+.owl-two > .owl-item > .item > .box > .testimonial-img >  img{
+  width: auto !important;
 }
 /* buttons */
 .btn-pink,
